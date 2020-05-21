@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<RestPokemonResponse> call, Response<RestPokemonResponse> response) {
                 if(response.isSuccessful() && response.body() != null){
                         List<Pokemon> pokemonList = response.body().getResults();
-                    Toast.makeText(this, "API Success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "API Success", Toast.LENGTH_SHORT).show();
 
                 } else {
                     showError();
