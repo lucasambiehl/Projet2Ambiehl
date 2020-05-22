@@ -1,4 +1,4 @@
-package com.example.projet2ambiehl;
+package com.example.projet2ambiehl.presentation.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,6 +9,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.projet2ambiehl.Constants;
+import com.example.projet2ambiehl.R;
+import com.example.projet2ambiehl.data.PokeApi;
+import com.example.projet2ambiehl.presentation.model.Pokemon;
+import com.example.projet2ambiehl.presentation.model.RestPokemonResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;

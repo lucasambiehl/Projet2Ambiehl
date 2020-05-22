@@ -1,4 +1,4 @@
-package com.example.projet2ambiehl;
+package com.example.projet2ambiehl.presentation.view;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -6,6 +6,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.projet2ambiehl.R;
+import com.example.projet2ambiehl.presentation.model.Pokemon;
 
 import java.util.List;
 

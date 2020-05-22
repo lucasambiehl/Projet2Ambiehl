@@ -1,4 +1,4 @@
-package com.example.projet2ambiehl;
+package com.example.projet2ambiehl.presentation.model;
 
 public class Pokemon {
     private String url;
