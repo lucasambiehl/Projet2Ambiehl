@@ -1,7 +1,5 @@
 package com.example.projet2ambiehl.presentation.view;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -13,8 +11,6 @@ import com.example.projet2ambiehl.R;
 import com.example.projet2ambiehl.Singletons;
 import com.example.projet2ambiehl.presentation.controller.MainController;
 import com.example.projet2ambiehl.presentation.model.Pokemon;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 import java.util.List;
 
@@ -48,7 +44,12 @@ public class MainActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new ListAdapter(pokemonList);
+        mAdapter = new ListAdapter(pokemonList, new ListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Pokemon item) {
+                controller.onItemClick(item);
+            }
+        });
         recyclerView.setAdapter(mAdapter);
     }
 
@@ -56,4 +57,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "API Error", Toast.LENGTH_SHORT).show();
     }
 
+    public void navigateToDetails(Pokemon pokemon) {
+        Toast.makeText(getApplicationContext(), "TODO NAVIGATE", Toast.LENGTH_SHORT).show();
+
+    }
 }
