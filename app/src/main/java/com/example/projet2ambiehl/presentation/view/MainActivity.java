@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.projet2ambiehl.R;
+import com.example.projet2ambiehl.Singletons;
 import com.example.projet2ambiehl.presentation.controller.MainController;
 import com.example.projet2ambiehl.presentation.model.Pokemon;
 import com.google.gson.Gson;
@@ -32,10 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         controller = new MainController(
                 this,
-                new GsonBuilder()
-                        .setLenient()
-                        .create(),
-                getSharedPreferences("application_esiea", Context.MODE_PRIVATE);
+                Singletons.getGson(),
+                Singletons.getSharedPreferences (getApplicationContext())
         );
         controller.onStart();
     }
