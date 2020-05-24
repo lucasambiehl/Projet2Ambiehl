@@ -27,7 +27,8 @@ https://github.com/lucasambiehl/Projet2Ambiehl
 - Ecrans : 2 activités
 - Affichage d'une liste dans un RecyclerView
 - Affichage du détail d'un item de la liste
-- Gitflow 
+- Design Pattern
+- Principe SOLID
 - Fonctions supplémentaires :
 	- Mise en cache
 
