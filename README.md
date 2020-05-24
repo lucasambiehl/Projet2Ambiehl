@@ -35,15 +35,17 @@ https://github.com/lucasambiehl/Projet2Ambiehl
 
 ## Fonctionnalités: 
 
-### Premier écran 
+
 
 ### Ecran Liste 
 
-
+<img src="Screen1.png" alt="Ecran affichant la liste">
 
 ### Ecran du détail d'un élément
 
 - Affiche le nom du pokémon
+
+<img src="Screen2.png" alt="Detail élément, affichant le nom">
 
 
 
